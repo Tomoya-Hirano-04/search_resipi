@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
 import random
-from google.oauth2.service_account import ServiceAccountCredentials
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
 
 # Google APIの認証情報を設定
 scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
